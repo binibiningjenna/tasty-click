@@ -39,6 +39,12 @@ body {
   font-weight: bold;
 }
 
+.btn-primary {
+  --bs-btn-active-bg: var(--primary-color);
+  --bs-btn-active-color: var(--dark-color);
+  --bs-btn-active-border-color: var(--primary-color);
+}
+
 .btn-primary:hover {
   background-color: var(--button-hover-bg);
 }
