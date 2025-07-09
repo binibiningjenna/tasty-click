@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css");
+
+/* Light Pink */
+:root {
+  --background-color: #fce0e8;
+  --primary-color: #ff89ae;
+  --dark-color: #302727;
+  --text-color: #4c3838;
+  --button-bg: #344351;
+  --button-hover-bg: #e65c87;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--background-color) !important;
+}
+
+.header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.regular-text {
+  font-family: "Raleway", sans-serif;
+  color: var(--text-color) !important;
+  font-weight: 400;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  border: none;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: var(--button-hover-bg);
+}
+
+/* Default toggler icon for light mode */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none' stroke='black' stroke-width='3'%3E%3Cline x1='3' y1='7' x2='27' y2='7'/%3E%3Cline x1='3' y1='15' x2='27' y2='15'/%3E%3Cline x1='3' y1='23' x2='27' y2='23'/%3E%3C/svg%3E") !important;
+}
+
+/* Dark mode styles for toggler icon */
+body.dark-mode .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none' stroke='white' stroke-width='3'%3E%3Cline x1='3' y1='7' x2='27' y2='7'/%3E%3Cline x1='3' y1='15' x2='27' y2='15'/%3E%3Cline x1='3' y1='23' x2='27' y2='23'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-nav .nav-link,
+.footer .nav-link {
+  font-family: "Montserrat", sans-serif !important;
+  color: var(--text-color) !important;
+  font-weight: bold !important;
+}
+
+.nav-link:hover,
+.footer .nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.navbar {
+  background-color: var(--background-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.background {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding-top: 80px;
+}
+
+.icon-bg {
+  background-color: var(--primary-color);
+}
+
+.gradient-line-breaker {
+  height: 3px;
+  background: var(--primary-color);
+  margin: 40px 40px;
+}
+
+.img {
+  object-fit: cover;
+}
+
+/* Dark Red */
+[data-bs-theme="dark"] {
+  --primary-color: #731a1a;
+  --text-color: #731a1a;
+  --dark-color: #fce0e8;
+  --button-bg: #731a1a;
+  --button-hover-bg: #731a1a;
+}
+
+.card {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-control:focus {
+  border-color: var(--primaryColor);
+  border-width: 1px;
+  box-shadow: none;
+}
+
+.layout {
+  margin-top: 140px;
+}
+
+.th-no-bold {
+  font-weight: normal;
+}
+
+.image-style {
+  width: 100%;
+  max-width: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 5px solid var(--primary-color);
+}
+
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1.5s ease;
+}
+
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
